@@ -27,9 +27,9 @@
             % if self.stanford_theme_enabled():
               <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
             % else:
-              <h1>${_("The Future of Online")}</h1>
+              <h1>${_("A Robotica na Pratica")}</h1>
             % endif
-            <h2>${_("For anyone, anywhere, anytime")}</h2>
+              <h2>${_("Cursos interativos para aprender robotica bricando")}</h2>
           % endif
         </hgroup>
 
@@ -91,7 +91,7 @@
     <%
       youtube_video_id = homepage_promo_video_youtube_id
       if self.stanford_theme_enabled():
-        youtube_video_id = "2gmreZObCY4"
+        youtube_video_id = "zFaFJ37-0hA"
     %>
     <iframe width="640" height="360" src="//www.youtube.com/embed/${youtube_video_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>

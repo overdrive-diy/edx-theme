@@ -230,3 +230,12 @@ header.global {
 .home>header{
 	height: 390px;
 }
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart{
+    background-color: #ffc200 !important;
+}
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:hover:not(:disabled){
+    background-color: #ffc200 !important;
+}
+header.global .nav-global, header.global header.global-new .nav-courseware, header.global-new header.global .nav-courseware {
+margin-top: 14px;
+}

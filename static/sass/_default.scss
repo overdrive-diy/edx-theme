@@ -4,7 +4,7 @@
 *   Contains all the theme color definitions for the Stanford Open Source MOOC Project
 *
 ****************************************************************************************************/
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 //-----------------
 //  Color variables (from Stanford palette unless noted)
 //-----------------
@@ -50,7 +50,7 @@ $body-font-family: $sans-serif;
 $theme-serif-font: 'Crimson Text';
 $serif: $theme-serif-font, $serif;
 
-
+$theme-alternative-font: 'Roboto';
 
 
 //-----------------
@@ -211,6 +211,8 @@ $video-thumb-url: '../themes/default/images/edx.png';
 // Elementos total
 //-----------------
 
+
+
 .wrapper-footer footer .references{
 	float: right;
 }
@@ -239,3 +241,5 @@ header.global {
 header.global .nav-global, header.global header.global-new .nav-courseware, header.global-new header.global .nav-courseware {
 margin-top: 14px;
 }
+
+h1{font-family: 'Roboto'; font-weight: normal}

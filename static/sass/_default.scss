@@ -273,3 +273,24 @@ h1,h2{font-family: 'Roboto' !important}
 .highlighted-courses .courses .course .info .cover-image, .find-courses .courses .course .info .cover-image{
     height: initial !important;
 }
+.highlighted-courses .courses .course .meta-info, .find-courses .courses .course .meta-info{
+    display: none
+}
+.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc{
+    margin-top: 70px
+}
+.highlighted-courses .courses .course header.course-preview .info-link, .find-courses .courses .course header.course-preview .info-link{
+    display: none
+}
+.highlighted-courses .courses .course header.course-preview hgroup h2, .find-courses .courses .course header.course-preview hgroup h2{
+    color: #3f3e3e;
+    font-family: 'Roboto' !important;
+    font-size: 18px;
+}
+.highlighted-courses .courses .course header.course-preview hgroup, .find-courses .courses .course header.course-preview hgroup{
+    width: 93%;
+}
+.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc{
+    margin-top: 60px;
+    height: 80px;
+}

@@ -253,7 +253,8 @@ h1,h2{font-family: 'Roboto' !important}
 }
 
 .highlighted-courses .courses .course .inner-wrapper, .find-courses .courses .course .inner-wrapper{
-    overflow: visible !important
+    overflow: visible !important;
+    border: none;
 }
 
 .highlighted-courses .courses .course:hover, .highlighted-courses .courses .course:focus, .find-courses .courses .course:hover, .find-courses .courses .course:focus{
@@ -270,7 +271,7 @@ h1,h2{font-family: 'Roboto' !important}
 }
 .highlighted-courses .courses .course header.course-preview{
     border-bottom: none;
-    margin-top: 145px;
+    margin-top: 137px;
 }
 .find-courses .courses .course header.course-preview .info-link{display: none}
 .highlighted-courses .courses .courses-listing .courses-listing-item, .find-courses .courses .courses-listing .courses-listing-item{
@@ -297,16 +298,24 @@ h1,h2{font-family: 'Roboto' !important}
     margin-top: 60px;
     height: initial !important;
 }
-.find-courses .courses .course .info .desc p{
-    font-family: 'Roboto' !important;
-    font-weight: 300px;
+.desc p{
+    color: #606060;
+    font: 17px Roboto, "Crimson Text",Georgia,Cambria,"Times New Roman",Times,serif;
+    margin: 0px;
 }
 .highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom{
-    display: none
+    background: #fad452;
+    display: block;
+    height: 54px;
+}
+.highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom .university,.start-date{display: none}
+.highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom:after{
+    content: 'Assistir';
 }
 .highlighted-courses .courses .course header.course-preview hgroup h2 .course-number, .find-courses .courses .course header.course-preview hgroup h2 .course-number{
     display: none;
 }
 .highlighted-courses .courses .course .info, .find-courses .courses .course .info{
     height: initial !important;
+    background: white;
 }

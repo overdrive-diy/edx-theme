@@ -265,7 +265,7 @@ h1,h2{font-family: 'Roboto' !important}
     border: 1px solid #eaeeef;
     border-radius: 3px;
     box-shadow: none;
-    height: 342px;
+    height: 352px;
 }
 .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview{
 
@@ -290,14 +290,14 @@ h1,h2{font-family: 'Roboto' !important}
 .highlighted-courses .courses .course header.course-preview hgroup h2, .find-courses .courses .course header.course-preview hgroup h2{
     color: #3f3e3e;
     font-family: 'Roboto' !important;
-    font-size: 18px;
+    font-size: 24px;
 }
 .highlighted-courses .courses .course header.course-preview hgroup, .find-courses .courses .course header.course-preview hgroup{
     width: 93%;
     margin-top: 18px;
 }
 .highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc{
-    margin-top: 70px;
+    margin-top: 80px;
     height: initial !important;
     margin-bottom: 10px;
 }
@@ -328,3 +328,4 @@ h1,h2{font-family: 'Roboto' !important}
     height: initial !important;
     background: white;
 }
+.cta-login{background: transparent; font-size: 18px;}

@@ -268,7 +268,11 @@ h1,h2{font-family: 'Roboto' !important}
 .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview{
 
 }
-.highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview .info-link{display: none}
+.highlighted-courses .courses .course header.course-preview{
+    border-bottom: none;
+    margin-top: 145px;
+}
+.find-courses .courses .course header.course-preview .info-link{display: none}
 .highlighted-courses .courses .courses-listing .courses-listing-item, .find-courses .courses .courses-listing .courses-listing-item{
     width: 23.36%;
 }
@@ -290,9 +294,12 @@ h1,h2{font-family: 'Roboto' !important}
     width: 93%;
 }
 .highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc{
-    margin-top: 70px;
     margin-top: 60px;
     height: initial !important;
+}
+.find-courses .courses .course .info .desc p{
+    font-family: 'Roboto' !important;
+    font-weight: 300px;
 }
 .highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom{
     display: none

@@ -2,26 +2,20 @@
 
 <%! from django.core.urlresolvers import reverse %>
 <%inherit file="main.html" />
+
+<%block name="pagetitle">${_("Cursos")}</%block>
+
 <%namespace name='static' file='static_content.html'/>
 
 <%! from microsite_configuration import microsite %>
-
-<%def name="theme_enabled()">
-  <% return settings.FEATURES.get("USE_CUSTOM_THEME", False) %>
-</%def>
 
 <%
   homepage_overlay_html = microsite.get_value('homepage_overlay_html')
 
   show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', True)
-  homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "XNaiOGxWeto")
+  homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "zFaFJ37-0hA")
 
   show_partners = microsite.get_value('show_partners', True)
-
-  if theme_enabled():
-    course_header = 'theme-course.html'
-  else:
-    course_header = None
 
 %>
 
@@ -34,11 +28,11 @@
             ${homepage_overlay_html}
           % else:
             % if self.stanford_theme_enabled():
-              <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="UNC Online")}</h1>
+              <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
             % else:
-              <h1>${_("The Future of Online Education")}</h1>
+              <h1>A Robótica na Prática</h1>
             % endif
-            <h2>${_("For anyone, anywhere, anytime")}</h2>
+              <h2>Cursos interativos para aprender brincando</h2>
           % endif
         </hgroup>
 
@@ -78,9 +72,7 @@
   </header>
   <section class="container">
     <section class="highlighted-courses">
-      % if course_header:
-        <%include file="${course_header}" />
-      %endif
+
       % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
         <section class="courses">
             <ul class="courses-listing">
@@ -102,7 +94,7 @@
     <%
       youtube_video_id = homepage_promo_video_youtube_id
       if self.stanford_theme_enabled():
-        youtube_video_id = "2gmreZObCY4"
+        youtube_video_id = "zFaFJ37-0hA"
     %>
     <iframe width="640" height="360" src="//www.youtube.com/embed/${youtube_video_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>

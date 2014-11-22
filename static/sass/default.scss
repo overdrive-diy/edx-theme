@@ -5,6 +5,7 @@
 *
 ****************************************************************************************************/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
 //-----------------
 //  Color variables (from Stanford palette unless noted)
 //-----------------
@@ -222,7 +223,8 @@ header.global nav {
 }
 
 header.global {
-	height: 82px;
+	height: 80px;
+    background: #2f2f2f;
 }
 
 .home>header .outer-wrapper{
@@ -231,6 +233,7 @@ header.global {
 
 .home>header{
 	height: 390px;
+    display: none;
 }
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart{
     background-color: #ffc200 !important;
@@ -244,3 +247,121 @@ margin-top: 14px;
 
 h1,h2{font-family: 'Roboto' !important}
 .home>header {background-size: initial; background-size: inherit;}
+
+.highlighted-courses .courses .course:hover .info,.highlighted-courses .courses .course:focus .info,.find-courses .courses .course:hover .info,.find-courses .courses .course:focus .info {
+    top: 0px !important
+}
+
+.highlighted-courses .courses .course .inner-wrapper, .find-courses .courses .course .inner-wrapper{
+    overflow: visible !important;
+    border: none;
+}
+
+.highlighted-courses .courses .course:hover, .highlighted-courses .courses .course:focus, .find-courses .courses .course:hover, .find-courses .courses .course:focus{
+    border-color: #eaeeef;
+    box-shadow: none;
+}
+.highlighted-courses .courses .course, .find-courses .courses .course{
+    border: 1px solid #eaeeef;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 352px;
+}
+.highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview{
+
+}
+.highlighted-courses .courses .course header.course-preview{
+    border-bottom: none;
+    margin-top: 137px;
+}
+.find-courses .courses .course header.course-preview .info-link{display: none}
+.highlighted-courses .courses .courses-listing .courses-listing-item, .find-courses .courses .courses-listing .courses-listing-item{
+    width: 23.36%;
+}
+.highlighted-courses .courses .course .info .cover-image, .find-courses .courses .course .info .cover-image{
+    height: initial !important;
+}
+.highlighted-courses .courses .course .meta-info, .find-courses .courses .course .meta-info{
+    display: none
+}
+.highlighted-courses .courses .course header.course-preview .info-link, .find-courses .courses .course header.course-preview .info-link{
+    display: none
+}
+.highlighted-courses .courses .course header.course-preview hgroup h2, .find-courses .courses .course header.course-preview hgroup h2{
+    color: #3f3e3e;
+    font-family: 'Roboto' !important;
+    font-size: 24px;
+}
+.highlighted-courses .courses .course header.course-preview hgroup, .find-courses .courses .course header.course-preview hgroup{
+    width: 93%;
+    margin-top: 18px;
+}
+.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc{
+    margin-top: 80px;
+    height: initial !important;
+    margin-bottom: 10px;
+}
+.desc p{
+    color: #606060;
+    font: 17px Roboto, "Crimson Text",Georgia,Cambria,"Times New Roman",Times,serif;
+    margin: 0px;
+}   
+.highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom{
+    background: #fad452;
+    display: block;
+    height: 54px;
+}
+.highlighted-courses .courses .course .info .bottom .university, .highlighted-courses .courses .course .info .bottom .start-date, .find-courses .courses .course .info .bottom .university,.find-courses .courses .course .info .bottom .start-date{display: none}
+.highlighted-courses .courses .course .info .bottom:after, .find-courses .courses .course .info .bottom:after{
+    content: 'Assistir';
+    display: block;
+    padding: 19px;
+    color: #3f3e3e;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+.highlighted-courses .courses .course header.course-preview hgroup h2 .course-number, .find-courses .courses .course header.course-preview hgroup h2 .course-number{
+    display: none;
+}
+.highlighted-courses .courses .course .info, .find-courses .courses .course .info{
+    height: initial !important;
+    background: white;
+}
+.cta-login{background: transparent !important; font-size: 19px !important}
+
+/*Login Page*/
+
+.login aside .cta, .register aside .cta, .passwordreset aside .cta, #forgot-password-modal #password-reset aside .cta{
+    border: 1px solid #eaeeef;
+    padding: 29px;
+}
+
+.view-register .introduction header .title .title-super, .view-login .introduction header .title .title-super, .view-passwordreset .introduction header .title .title-super{
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+.view-register .introduction header .title .title-sub, .view-login .introduction header .title .title-sub, .view-passwordreset .introduction header .title .title-sub{
+    margin-left: 0;
+    font-size: 20px;
+    text-transform: lowercase;
+    color: #585858;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.login form .field label, .register form .field label, .passwordreset form .field label, #forgot-password-modal #password-reset form .field label{
+    font: 20px 'Roboto';
+}
+#field-remember label{
+    font-size: 14px;
+font-weight: normal;
+}
+.login form .field input, .login form .field textarea, .register form .field input, .register form .field textarea, .passwordreset form .field input, .passwordreset form .field textarea, #forgot-password-modal #password-reset form .field input, #forgot-password-modal #password-reset form .field textarea{
+    border: 1px solid #eaeeef;
+}
+.view-register .introduction header .title, .view-login .introduction header .title, .view-passwordreset .introduction header .title{
+    width: 100%
+}

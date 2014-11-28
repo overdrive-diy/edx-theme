@@ -224,9 +224,35 @@ header.global nav {
 
 header.global {
 	height: 80px;
-    background: #2f2f2f;
+    background: #2f2f2f !important;
 }
-
+header.global .user a.user-link{
+    border: none;
+    border-radius: 0px;
+    background: none;
+    color: white;
+    text-shadow: none;
+    font-size: 18px;
+    box-shadow: none;
+}
+header.global .user a.user-link .avatar{
+    display: none;
+}
+header.global .user>.primary:last-child>a{
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: white;
+    margin-top: -6px;
+    box-shadow: none;
+}
+header.global.slim h2{
+    text-shadow: none !important;
+    color: white !important;
+}
+header.global.slim h2 .provider{
+    color: white
+}
 .home>header .outer-wrapper{
 	padding-top: 190px;
 }

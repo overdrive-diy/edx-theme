@@ -424,10 +424,14 @@ font-weight: normal;
     font-style: normal !important
 }
 .content-wrapper{
-    background: #fbfbfb !important;
+    background: white !important;
 }
 .container>div{
     border: 1px solid #dee1e2 !important;
+    background: white !important;
+}
+.sidebar, .course-index, div#wiki_panel, div.info-wrapper section.handouts, div.book-wrapper section.book-sidebar, .profile-wrapper .user-info{
+    background: white !important;
 }
 .course-index{
     border-right: 1px solid #dee1e2 !important
@@ -451,7 +455,7 @@ nav.course-material ol.course-tabs li a{
 nav.course-material ol.course-tabs{
     padding: 28px 0 0 0 !important;
 }
-.courseware .container{
+.ltr .container{
     padding: 0px 0 0 0 !important;
 }
 .xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li{
@@ -489,4 +493,20 @@ body.discussion .course-tabs .right .new-post-btn{
 .container .discussion-body .blank-slate .home-title, .container .discussion-module .blank-slate .home-title, .container .discussion-user-threads .blank-slate .home-title{
     font-family: 'Roboto' !important;
     font-size: 18px;
+}
+section.wiki .btn, section.wiki .btn:hover{
+    border: none !important;
+    background: #fad452 !important;
+    border-radius: 0 !important;
+    text-shadow: none !important;
+    color: #3f3e3e !important;
+    font-size: 16px !important;
+}
+section.wiki .breadcrumb li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3e3e;
+}
+section.wiki .breadcrumb li a:hover{
+    color: #fad452 !important
 }

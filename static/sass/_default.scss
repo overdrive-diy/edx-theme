@@ -44,7 +44,7 @@ $black-80: #585858;
 //  Font Assignment
 //-----------------
 
-$theme-sans-font: 'Source Sans';
+$theme-sans-font: 'Roboto';
 $sans-serif: $theme-sans-font, $sans-serif;
 $body-font-family: $sans-serif;
 
@@ -427,8 +427,66 @@ font-weight: normal;
     background: #fbfbfb !important;
 }
 .container>div{
-    border: 1px solid #ffd95e !important;
+    border: 1px solid #dee1e2 !important;
 }
 .course-index{
     border-right: 1px solid #dee1e2 !important
+}
+nav.course-material ol.course-tabs li a.active, nav.course-material .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol.course-tabs li a.seq_video.active, .xmodule_display.xmodule_SequenceModule nav.sequence-nav nav.course-material ol.course-tabs li a.seq_video.active, nav.course-material ol.course-tabs li a:hover{
+    background: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #3f3e3e !important;
+    border-bottom: 4px solid #fad452 !important;
+    border-radius: 0px !important;
+    color: #fad452 !important;
+    font-size: 16px !important;
+    font-family: 'Roboto' !important;
+}
+nav.course-material ol.course-tabs li a{
+    color: #3f3e3e !important;
+    font-size: 16px !important;
+    font-family: 'Roboto' !important;
+}
+nav.course-material ol.course-tabs{
+    padding: 28px 0 0 0 !important;
+}
+.courseware .container{
+    padding: 0px 0 0 0 !important;
+}
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li{
+    border-radius: 0 !important;
+    background: white !important;
+}
+body.discussion .course-tabs .right .new-post-btn{
+    background: #fad452 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: #3f3e3e !important;
+    font-family: 'Roboto' !important;
+    font-size: 16px !important;
+}
+.forum-nav-header{
+    background: none !important
+}
+.forum-nav-header:hover{
+    background: none !important   
+}
+.forum-nav-refine-bar{
+    background: none !important    
+}
+.container .discussion-body .blank-slate .label, .container .discussion-module .blank-slate .label, .container .discussion-user-threads .blank-slate .label{
+    display: none;
+}
+
+.container .discussion-body .blank-slate section, .container .discussion-module .blank-slate section, .container .discussion-user-threads .blank-slate section{
+    border: none !important;
+}
+.container .discussion-body .discussion-article, .container .discussion-module .discussion-article, .container .discussion-user-threads .discussion-article{
+    background: none !important
+}
+.container .discussion-body .blank-slate .home-title, .container .discussion-module .blank-slate .home-title, .container .discussion-user-threads .blank-slate .home-title{
+    font-family: 'Roboto' !important;
+    font-size: 18px;
 }

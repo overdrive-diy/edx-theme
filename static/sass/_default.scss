@@ -343,6 +343,7 @@ h1,h2{font-family: 'Roboto' !important}
     font-weight: 500;
     text-align: center;
     text-transform: capitalize;
+    color: #3f3e3e;
 }
 .view-register .introduction header .title .title-sub, .view-login .introduction header .title .title-sub, .view-passwordreset .introduction header .title .title-sub{
     margin-left: 0;
@@ -363,5 +364,71 @@ font-weight: normal;
     border: 1px solid #eaeeef;
 }
 .view-register .introduction header .title, .view-login .introduction header .title, .view-passwordreset .introduction header .title{
-    width: 100%
+    width: 100%;
+}
+.view-register .login aside .cta h3, .login aside .cta .view-register h3, .view-register .register aside .cta h3, .register aside .cta .view-register h3, .view-register .passwordreset aside .cta h3, .passwordreset aside .cta .view-register h3, .view-register #forgot-password-modal #password-reset aside .cta h3, #forgot-password-modal #password-reset aside .cta .view-register h3, .view-register .login .status .message-title, .login .status .view-register .message-title, .view-register .register .status .message-title, .register .status .view-register .message-title, .view-register .passwordreset .status .message-title, .passwordreset .status .view-register .message-title, .view-register #forgot-password-modal #password-reset .status .message-title, #forgot-password-modal #password-reset .status .view-register .message-title, .view-login .login aside .cta h3, .login aside .cta .view-login h3, .view-login .register aside .cta h3, .register aside .cta .view-login h3, .view-login .passwordreset aside .cta h3, .passwordreset aside .cta .view-login h3, .view-login #forgot-password-modal #password-reset aside .cta h3, #forgot-password-modal #password-reset aside .cta .view-login h3, .view-login .login .status .message-title, .login .status .view-login .message-title, .view-login .register .status .message-title, .register .status .view-login .message-title, .view-login .passwordreset .status .message-title, .passwordreset .status .view-login .message-title, .view-login #forgot-password-modal #password-reset .status .message-title, #forgot-password-modal #password-reset .status .view-login .message-title, .view-passwordreset .login aside .cta h3, .login aside .cta .view-passwordreset h3, .view-passwordreset .register aside .cta h3, .register aside .cta .view-passwordreset h3, .view-passwordreset .passwordreset aside .cta h3, .passwordreset aside .cta .view-passwordreset h3, .view-passwordreset #forgot-password-modal #password-reset aside .cta h3, #forgot-password-modal #password-reset aside .cta .view-passwordreset h3, .view-passwordreset .login .status .message-title, .login .status .view-passwordreset .message-title, .view-passwordreset .register .status .message-title, .register .status .view-passwordreset .message-title, .view-passwordreset .passwordreset .status .message-title, .passwordreset .status .view-passwordreset .message-title, .view-passwordreset #forgot-password-modal #password-reset .status .message-title, #forgot-password-modal #password-reset .status .view-passwordreset .message-title{
+    font-family: 'Roboto' !important;
+}
+.cta-help a{
+    color: #606060 !important;
+    font-weight: bold !important;
+}
+.login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-survey .action-primary, .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware{
+    background: #fad452 !important;
+    color: #494949 !important;
+}
+
+/*Interna do Curso*/
+.course-info .details .inner-wrapper .course-staff .teacher{
+    float: left; margin-right: 20px
+}
+.course-info .details .inner-wrapper .course-staff .teacher .teacher-image{
+    float: none;
+    margin: 0 auto;
+}
+.course-info .details .inner-wrapper .course-staff .teacher h3{
+    text-align: center;
+    margin-top: 5px
+}
+.course-info .details .inner-wrapper .course-staff .teacher p{
+    text-align: center;
+}
+.course-staff h2{
+    text-align: center;
+}
+.course-info .course-sidebar>section{
+    border: 1px solid #eaeeef;
+}
+.course-info .course-sidebar .important-dates li{
+    border-bottom: 1px dotted #eaeeef;
+}
+.home .university-partners hr::after, .course-info .container nav::after, .course-info section.outside-app nav::after, .course-info .course-sidebar header::after, .mediakit hr::after, .container.about>nav::after, section.about.outside-app>nav::after{
+    background-image: -webkit-linear-gradient(#eaeeef 0%, #eaeeef);
+}
+.main-cta .register, .main-cta .register:hover, .dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover{
+    border: none !important;
+    background: #fad452 !important;
+    color: #494949 !important;
+    font-family: 'Roboto' !important;
+}
+
+/*Listagem de Curso*/
+.dashboard .my-courses .course .info>hgroup h3 a, .dashboard .my-courses .course .info>hgroup h3 span{
+    font-family: 'Roboto' !important; 
+    font-weight: bold;
+    font-size: 18px !important;
+    color: #3f3e3e !important;
+
+}
+.dashboard .my-courses a.unenroll, .dashboard .my-courses a.email-settings{
+    font-style: normal !important
+}
+.content-wrapper{
+    background: #fbfbfb !important;
+}
+.container>div{
+    border: 1px solid #ffd95e !important;
+}
+.course-index{
+    border-right: 1px solid #dee1e2 !important
 }

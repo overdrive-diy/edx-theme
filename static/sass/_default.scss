@@ -212,12 +212,34 @@ $video-thumb-url: '../images/edx.png';
 // Elementos total
 //-----------------
 
-
+//Menu Topo
+header.global .user .dropdown-menu{
+    border: 1px solid #eaeeef;
+}
+header.global .user .dropdown-menu li{
+    border-top: 1px solid #eaeeef;
+}
+header.global .user .dropdown-menu li>a{
+    color: #3f3e3e;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+header.global .user .dropdown-menu::before{
+    display: none;
+}
+a:link, a:visited{
+    color: #7b7a7a !important
+}
+.wrapper-footer{
+    background: #2f2f2f !important;
+}
 
 .wrapper-footer footer .references{
 	float: right;
 }
-
+.wrapper-footer footer .colophon .nav-colophon li a{
+    color: white !important
+}
 header.global nav {
 	height: 47px;
 }
@@ -261,6 +283,16 @@ header.global.slim h2 .provider{
 	height: 390px;
     display: none;
 }
+.course-info header.course-profile{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.course-info header.course-profile .intro-inner-wrapper{
+    border: none;
+    box-shadow: none;
+    background: none;
+}
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart{
     background-color: #ffc200 !important;
 }
@@ -291,7 +323,7 @@ h1,h2{font-family: 'Roboto' !important}
     border: 1px solid #eaeeef;
     border-radius: 3px;
     box-shadow: none;
-    height: 352px;
+    height: 306px;
 }
 .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview{
 
@@ -380,7 +412,8 @@ h1,h2{font-family: 'Roboto' !important}
     font-family: 'Roboto';
 }
 .login form .field label, .register form .field label, .passwordreset form .field label, #forgot-password-modal #password-reset form .field label{
-    font: 20px 'Roboto';
+    font: 18px 'Roboto';
+    font-weight: bold;
 }
 #field-remember label{
     font-size: 14px;
@@ -424,9 +457,23 @@ font-weight: normal;
 }
 .course-info .course-sidebar>section{
     border: 1px solid #eaeeef;
+    box-shadow: none;
+}
+.course-info .course-sidebar header{
+    display: none
+}
+.course-info .course-sidebar .important-dates{
+    padding: 20px 10px 0 10px
 }
 .course-info .course-sidebar .important-dates li{
-    border-bottom: 1px dotted #eaeeef;
+    border-bottom: 1px dotted #eaeeef
+}
+.course-info .details h2, .course-info .details section.outside-app h1, section.outside-app .course-info .details h1{
+    font-weight: bold;
+    text-transform: none
+}
+.course-info header.course-profile .intro-inner-wrapper .media .hero{
+    border: none;
 }
 .home .university-partners hr::after, .course-info .container nav::after, .course-info section.outside-app nav::after, .course-info .course-sidebar header::after, .mediakit hr::after, .container.about>nav::after, section.about.outside-app>nav::after{
     background-image: -webkit-linear-gradient(#eaeeef 0%, #eaeeef);
@@ -462,6 +509,18 @@ font-weight: normal;
 .course-index{
     border-right: 1px solid #dee1e2 !important
 }
+.course-index div#accordion h3.ui-accordion-header.ui-state-active a{
+    font-weight: bold;
+}
+.course-index div#accordion h3.ui-accordion-header a{
+    color: #3f3e3e;
+}
+.dashboard .profile-sidebar .user-info>ul{
+    border: 1px solid #dee1e2 !important;
+}
+.dashboard .profile-sidebar header.profile{
+    border: 1px solid #dee1e2 !important;
+}
 nav.course-material ol.course-tabs li a.active, nav.course-material .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol.course-tabs li a.seq_video.active, .xmodule_display.xmodule_SequenceModule nav.sequence-nav nav.course-material ol.course-tabs li a.seq_video.active, nav.course-material ol.course-tabs li a:hover{
     background: none !important;
     box-shadow: none !important;
@@ -482,7 +541,13 @@ nav.course-material ol.course-tabs{
     padding: 28px 0 0 0 !important;
 }
 .ltr .container{
-    padding: 0px 0 0 0 !important;
+    padding: 0px 0 0 0;
+}
+.view-dashboard .container{
+    padding: 40px 0 0 0 !important;
+}
+.login.container{
+    padding-bottom: 60px !important;   
 }
 .xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li{
     border-radius: 0 !important;
@@ -535,4 +600,29 @@ section.wiki .breadcrumb li a{
 }
 section.wiki .breadcrumb li a:hover{
     color: #fad452 !important
+}
+
+/*Tela de Registro*/
+.view-register .container, .view-register section.outside-app, .view-register .introduction, .view-login .container, .view-login section.outside-app, .view-login .introduction, .view-passwordreset .container, .view-passwordreset section.outside-app, .view-passwordreset .introduction{
+    background: none;
+}
+.view-register .login form .instructions, .login form .view-register .instructions, .view-register .register form .instructions, .register form .view-register .instructions, .view-register .passwordreset form .instructions, .passwordreset form .view-register .instructions, .view-register #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-register .instructions, .view-login .login form .instructions, .login form .view-login .instructions, .view-login .register form .instructions, .register form .view-login .instructions, .view-login .passwordreset form .instructions, .passwordreset form .view-login .instructions, .view-login #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-login .instructions, .view-passwordreset .login form .instructions, .login form .view-passwordreset .instructions, .view-passwordreset .register form .instructions, .register form .view-passwordreset .instructions, .view-passwordreset .passwordreset form .instructions, .passwordreset form .view-passwordreset .instructions, .view-passwordreset #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-passwordreset .instructions{
+    font-family: 'Roboto';
+}
+.login aside .cta-login .cta-login-action:hover, .register aside .cta-login .cta-login-action:hover, .passwordreset aside .cta-login .cta-login-action:hover, #forgot-password-modal #password-reset aside .cta-login .cta-login-action:hover, .login aside .cta-login .cta-login-action:active, .register aside .cta-login .cta-login-action:active, .passwordreset aside .cta-login .cta-login-action:active, #forgot-password-modal #password-reset aside .cta-login .cta-login-action:active, .login aside .cta-login .cta-login-action:focus, .register aside .cta-login .cta-login-action:focus, .passwordreset aside .cta-login .cta-login-action:focus, #forgot-password-modal #password-reset aside .cta-login .cta-login-action:focus{
+    border: none;
+}
+.register aside .cta-login .cta-login-action{
+    border: none;
+    background: #fad452;
+    color: #494949;
+    margin-top: 10px;
+    width: 95%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.register aside .cta-login .instructions{
+    width: 100%
 }

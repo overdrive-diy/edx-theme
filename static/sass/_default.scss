@@ -252,7 +252,7 @@ header.global .user a.user-link{
     border: none;
     border-radius: 0px;
     background: none;
-    color: white;
+    color: white !importantc;
     text-shadow: none;
     font-size: 18px;
     box-shadow: none;
@@ -264,7 +264,7 @@ header.global .user>.primary:last-child>a{
     border: none;
     background: none;
     font-size: 30px;
-    color: white;
+    color: white !important;
     margin-top: -6px;
     box-shadow: none;
 }
@@ -302,7 +302,9 @@ header.global.slim h2 .provider{
 header.global .nav-global, header.global header.global-new .nav-courseware, header.global-new header.global .nav-courseware {
 margin-top: 14px;
 }
-
+header.global .nav-courseware li .cta, header.global .nav-courseware div .cta, .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware{
+    color: #f2f2f2 !important;
+}
 h1,h2{font-family: 'Roboto' !important}
 .home>header {background-size: initial; background-size: inherit;}
 
@@ -493,6 +495,14 @@ font-weight: normal;
     color: #3f3e3e !important;
 
 }
+.dashboard .my-courses .course .info .enter-course:hover{
+    background: #fad452 !important;
+    box-shadow: none;
+}
+.dashboard .my-courses .course .info .enter-course:hover:not(:disabled){
+    background: #fad452 !important;
+    box-shadow: none;
+}
 .dashboard .my-courses a.unenroll, .dashboard .my-courses a.email-settings{
     font-style: normal !important
 }
@@ -622,6 +632,9 @@ section.wiki .breadcrumb li a:hover{
     font-weight: bold;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
+}
+.register aside .cta-login .cta-login-action:hover{
+    background: #fad452;
 }
 .register aside .cta-login .instructions{
     width: 100%

@@ -252,7 +252,7 @@ header.global .user a.user-link{
     border: none;
     border-radius: 0px;
     background: none;
-    color: white !importantc;
+    color: white !important;
     text-shadow: none;
     font-size: 18px;
     box-shadow: none;
@@ -446,6 +446,7 @@ font-weight: normal;
 .course-info .details .inner-wrapper .course-staff .teacher .teacher-image{
     float: none;
     margin: 0 auto;
+    border: none !important
 }
 .course-info .details .inner-wrapper .course-staff .teacher h3{
     text-align: center;

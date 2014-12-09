@@ -434,7 +434,7 @@ font-weight: normal;
     color: #606060 !important;
     font-weight: bold !important;
 }
-.cta-register{display: none}
+.cta-register{display: none !important}
 .login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-survey .action-primary, .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware{
     background: #fad452 !important;
     color: #494949 !important;

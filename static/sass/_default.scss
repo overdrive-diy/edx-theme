@@ -330,7 +330,7 @@ h1,h2{font-family: 'Roboto' !important}
 .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview{
 
 }
-.highlighted-courses .courses .course header.course-preview{
+.highlighted-courses .courses .course header.course-preview, .highlighted-courses .courses .course header.course-preview, .find-courses .courses .course header.course-preview{
     border-bottom: none;
     margin-top: 137px;
 }
@@ -642,4 +642,7 @@ section.wiki .breadcrumb li a:hover{
     width: 100%
 }
 
-.find-courses header.search, .university-profile header.search{background-image:none}
+.find-courses header.search, .university-profile header.search{display: none;}
+.highlighted-courses .courses .course header.course-preview hgroup, .find-courses .courses .course header.course-preview hgroup{
+    margin-top: 168px;
+}

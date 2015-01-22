@@ -482,7 +482,7 @@ font-weight: normal;
 .home .university-partners hr::after, .course-info .container nav::after, .course-info section.outside-app nav::after, .course-info .course-sidebar header::after, .mediakit hr::after, .container.about>nav::after, section.about.outside-app>nav::after{
     background-image: -webkit-linear-gradient(#eaeeef 0%, #eaeeef);
 }
-.main-cta .register, .main-cta .register:hover, .dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover{
+.main-cta .register, .main-cta .register:hover, .dashboard .my-courses .course .info .enter-course, .dashboard .my-courses .course .info .enter-course:hover, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong{
     border: none !important;
     background: #fad452 !important;
     color: #494949 !important;

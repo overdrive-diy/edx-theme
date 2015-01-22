@@ -155,8 +155,8 @@
           <span class="register disabled">
             ${_("Course is full")}
           </span>
-        % elif invitation_only and not can_enroll:
-          <span class="register disabled">Clique aqui e adquira o nosso curso</span>
+        % elif invitation_only and not can_enroll:  
+        <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post"><input type="hidden" name="code" value="3BCB564D2828D57554275F849C495BEA" /><input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></form>
         ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
         ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
         ## so that they can register and become a real user that can enroll.

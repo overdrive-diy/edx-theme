@@ -156,7 +156,7 @@
             ${_("Course is full")}
           </span>
         % elif invitation_only and not can_enroll:  
-        <a href="http://overdriveeletronica.com.br/checkout">Comprar</a>
+        <a class="botao-comprar" href="http://overdriveeletronica.com.br/checkout">Comprar</a>
         ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
         ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
         ## so that they can register and become a real user that can enroll.

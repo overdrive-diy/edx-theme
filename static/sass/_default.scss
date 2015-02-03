@@ -300,16 +300,16 @@ header.global.slim h2 .provider{
     background-color: #ffc200 !important;
 }
 .main-cta .botao-comprar{
-    border: none;
-background: #fad452;
+border: none;
+background: #fad452 !important;
 color: #494949;
 font-family: 'Roboto' !important;
-border-radius: 3px;
-box-shadow: inset 0 1px 0 0 #f8d154;
-display: inline-block;
+border-radius: 3px !important;
+box-shadow: inset 0 1px 0 0 #f8d154 !important;
+display: inline-block !important;
 font-size: inherit;
 font-weight: bold;
-padding: 7px 18px;
+padding: 7px 18px !important;
 text-decoration: none;
 text-shadow: 0 1px 0 #ffc714;
 background-clip: padding-box;
@@ -659,11 +659,7 @@ section.wiki .breadcrumb li a:hover{
     padding-top: 5px !important;
     padding-bottom: 5px !important;
 }
-.register aside .cta-login .cta-login-action:hover{
-    background: #fad452;
-}
-.register aside .cta-login .instructions{
-    width: 100%
-}
+.register aside .cta-login .cta-login-action:hover{background: #fad452;}
+.register aside .cta-login .instructions{width: 100%}
 
-.find-courses header.search, .university-profile header.search{display: none;}
+.find-courses header.search, .university-profile header.search{display: none}
